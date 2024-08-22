@@ -1,57 +1,24 @@
 import { Link, NavLink } from "react-router-dom";
 import { useMenuToggle } from "../hooks/useMenuToggle";
+import Logo from "../assets/images/logo.png";
 
 export const Navbar = () => {
   const { isMenuOpen, handleClick } = useMenuToggle();
 
   return (
     <nav className="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-8">
         <Link
           to={"/"}
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8"
-            alt="Flowbite Logo"
+            src={Logo}
+            className="h-12 rounded-full "
+            alt="Nutricion Profesional Logo"
           />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Flowbite
-          </span>
         </Link>
 
-        {/* Mostrar ul en pantallas grandes */}
-        <div className="hidden lg:flex flex-1 text-center px-7 pt-1 justify-end">
-          <ul className="flex  space-x-8">
-            <li>
-              <NavLink
-                to={"/"}
-                className="text-gray-900 dark:text-white hover:text-blue-500"
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to={"/about"}
-                className="text-gray-900 dark:text-white hover:text-blue-500"
-              >
-                Nosotros
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to={"/products"}
-                className="text-gray-900 dark:text-white hover:text-blue-500"
-              >
-                Productos
-              </NavLink>
-            </li>
-          </ul>
-        </div>
-
-        {/* Mostrar botón en pantallas pequeñas */}
         <div className="lg:hidden flex items-center space-x-3">
           <button
             data-collapse-toggle="navbar-hamburger"
@@ -80,40 +47,41 @@ export const Navbar = () => {
           </button>
         </div>
 
-        {/* Menú desplegable en pantallas pequeñas */}
-        {isMenuOpen && (
-          <div className="lg:hidden w-full">
-            <ul className="flex flex-col space-y-2 p-4 text-center">
-              <li>
-                <NavLink
-                  to={"/"}
-                  className="block text-gray-900 dark:text-white hover:text-blue-500"
-                  onClick={handleClick} // Cierra el menú cuando se hace clic en un enlace
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to={"/about"}
-                  className="block text-gray-900 dark:text-white hover:text-blue-500"
-                  onClick={handleClick} // Cierra el menú cuando se hace clic en un enlace
-                >
-                  Nosotros
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to={"/products"}
-                  className="block text-gray-900 dark:text-white hover:text-blue-500"
-                  onClick={handleClick} // Cierra el menú cuando se hace clic en un enlace
-                >
-                  Productos
-                </NavLink>
-              </li>
-            </ul>
-          </div>
-        )}
+        <div
+          className={`${
+            isMenuOpen ? "block" : "hidden"
+          } w-full lg:flex lg:items-center lg:w-auto mt-4 lg:mt-0 `}
+        >
+          <ul className="flex flex-col lg:flex-row lg:space-x-8 lg:space-y-0 space-y-4 lg:text-center items-center">
+            <li>
+              <NavLink
+                to={"/"}
+                className="block text-gray-900 dark:text-white hover:text-blue-500"
+                onClick={handleClick}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to={"/about"}
+                className="block text-gray-900 dark:text-white hover:text-blue-500"
+                onClick={handleClick}
+              >
+                Nosotros
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to={"/products"}
+                className="block text-gray-900 dark:text-white hover:text-blue-500"
+                onClick={handleClick}
+              >
+                Productos
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );
