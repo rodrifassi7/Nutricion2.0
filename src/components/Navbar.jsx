@@ -48,11 +48,12 @@ export const Navbar = () => {
         </div>
 
         <div
-          className={`${
-            isMenuOpen ? "block" : "hidden"
-          } w-full lg:flex lg:items-center lg:w-auto mt-4 lg:mt-0 `}
+          className={`
+            ${
+              isMenuOpen ? "block" : "hidden"
+            } w-full lg:flex lg:items-center lg:w-auto mt-4 lg:mt-0 `}
         >
-          <ul className="flex flex-col lg:flex-row lg:space-x-8 lg:space-y-0 space-y-4 lg:text-center items-center dark:bg-gray-800 pb-4 ">
+          <ul className="flex flex-col lg:flex-row lg:space-x-8 lg:space-y-0 space-y-4 lg:text-center items-center dark:bg-gray-800 pb-4 md:pb-0">
             <li>
               <NavLink
                 to={"/"}
