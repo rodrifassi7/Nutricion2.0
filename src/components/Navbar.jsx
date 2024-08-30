@@ -6,11 +6,11 @@ export const Navbar = () => {
   const { isMenuOpen, handleClick } = useMenuToggle();
 
   return (
-    <nav className="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-8">
+    <nav className="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 h-20 ">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between  pt-4 ">
         <Link
           to={"/"}
-          className="flex items-center space-x-3 rtl:space-x-reverse"
+          className="flex items-center space-x-3 rtl:space-x-reverse pl-7"
         >
           <img
             src={Logo}
@@ -19,7 +19,7 @@ export const Navbar = () => {
           />
         </Link>
 
-        <div className="lg:hidden flex items-center space-x-3">
+        <div className="lg:hidden flex items-center space-x-3 pr-7 ">
           <button
             data-collapse-toggle="navbar-hamburger"
             type="button"
@@ -52,7 +52,7 @@ export const Navbar = () => {
             isMenuOpen ? "block" : "hidden"
           } w-full lg:flex lg:items-center lg:w-auto mt-4 lg:mt-0 `}
         >
-          <ul className="flex flex-col lg:flex-row lg:space-x-8 lg:space-y-0 space-y-4 lg:text-center items-center">
+          <ul className="flex flex-col lg:flex-row lg:space-x-8 lg:space-y-0 space-y-4 lg:text-center items-center dark:bg-gray-800 pb-4 ">
             <li>
               <NavLink
                 to={"/"}
