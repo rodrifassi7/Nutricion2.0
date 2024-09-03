@@ -6,25 +6,23 @@ export const Navbar = () => {
   const { isMenuOpen, handleClick } = useMenuToggle();
 
   return (
-    <nav className="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 h-20 ">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between  pt-4 ">
+    <nav id="navbar" className="w-full border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 h-20 z-50">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between pt-4">
         <Link
-          to={"/"}
+          to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse pl-7"
         >
           <img
             src={Logo}
-            className="h-12 rounded-full "
+            className="h-12 rounded-full"
             alt="Nutricion Profesional Logo"
           />
         </Link>
 
-        <div className="lg:hidden flex items-center space-x-3 pr-7 ">
+        <div className="lg:hidden flex items-center space-x-3 pr-7">
           <button
-            data-collapse-toggle="navbar-hamburger"
             type="button"
             className="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-hamburger"
             aria-expanded={isMenuOpen ? "true" : "false"}
             onClick={handleClick}
           >
@@ -49,14 +47,16 @@ export const Navbar = () => {
 
         <div
           className={`
-            ${
-              isMenuOpen ? "block" : "hidden"
-            } w-full lg:flex lg:items-center lg:w-auto mt-4 lg:mt-0 `}
+            transform transition-all duration-500 ease-in-out
+        ${
+          isMenuOpen ? "block" : "hidden"
+        } w-full lg:flex lg:items-center lg:w-auto mt-4 lg:mt-0 bg-gray-50 dark:bg-gray-800  inset-0 lg:relative lg:inset-auto lg:top-auto lg:left-auto z-50  
+      `}
         >
           <ul className="flex flex-col lg:flex-row lg:space-x-8 lg:space-y-0 space-y-4 lg:text-center items-center dark:bg-gray-800 pb-4 md:pb-0">
             <li>
               <NavLink
-                to={"/"}
+                to="/"
                 className="block text-gray-900 dark:text-white hover:text-blue-500"
                 onClick={handleClick}
               >
@@ -65,7 +65,7 @@ export const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to={"/about"}
+                to="/about"
                 className="block text-gray-900 dark:text-white hover:text-blue-500"
                 onClick={handleClick}
               >
@@ -74,11 +74,11 @@ export const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to={"/products"}
-                className="block text-gray-900 dark:text-white hover:text-blue-500"
+                to="/products"
+                className="bg-red-500 rounded-full h-10 w-16 flex items-center justify-center hover:bg-green-900 hover:text-black  text-gray-900 dark:text-white "
                 onClick={handleClick}
               >
-                Productos
+                Menu
               </NavLink>
             </li>
           </ul>

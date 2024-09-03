@@ -6,7 +6,6 @@ export const AppRouter = () => {
   return (
     <>
       <Navbar />
-
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUsPage />} />
