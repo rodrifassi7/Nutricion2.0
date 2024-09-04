@@ -1,8 +1,9 @@
 import { MenuCard } from "../components/MenuCard";
 
 export const MenuSection = () => {
+
   return (
-    <div id="menu-section" className=" h-screen flex flex-col items-center justify-center  p-12 ">
+    <div id="menu-section" className=" h-screen flex flex-col items-center justify-center  p-12">
       <h1 className="text-center max-w-2xl mb-4  text-6xl xl:text-8xl font-extrabold tracking-tight leading-none text-white">
         Nuestras dietas
       </h1>

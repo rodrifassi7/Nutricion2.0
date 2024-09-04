@@ -1,8 +1,27 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Nutricion Profesional
 
-Currently, two official plugins are available:
+Nutricion Profesional es un sitio web que ofrece información sobre los productos alimentarios más populares, así como una variedad de productos de alta calidad y listas en un segundo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías
+
+- React
+- Tailwind CSS
+- Next.js
+    
+
+## Desarrollo
+
+Para instalar las dependencias, ejecutar el siguiente comando en la terminal:
+
+```bash
+npm install
+```
+
+Luego, para iniciar el servidor de desarrollo, ejecutar el siguiente comando:
+
+```bash
+npm run dev
+```
+
+El sitio web se puede acceder a través de http://localhost:3000/.

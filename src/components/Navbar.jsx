@@ -6,7 +6,10 @@ export const Navbar = () => {
   const { isMenuOpen, handleClick } = useMenuToggle();
 
   return (
-    <nav id="navbar" className="w-full border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 h-20 z-50">
+    <nav
+      id="navbar"
+      className="w-full border-gray-200 bg-gray-50 dark:bg-stone-100 dark:border-gray-700 h-20 z-50"
+    >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between pt-4">
         <Link
           to="/"
@@ -53,11 +56,11 @@ export const Navbar = () => {
         } w-full lg:flex lg:items-center lg:w-auto mt-4 lg:mt-0 bg-gray-50 dark:bg-gray-800  inset-0 lg:relative lg:inset-auto lg:top-auto lg:left-auto z-50  
       `}
         >
-          <ul className="flex flex-col lg:flex-row lg:space-x-8 lg:space-y-0 space-y-4 lg:text-center items-center dark:bg-gray-800 pb-4 md:pb-0">
+          <ul className="flex flex-col lg:flex-row lg:space-x-4 lg:space-y-0 space-y-4 lg:text-center items-center dark:bg-stone-100  pb-4 md:pb-0">
             <li>
               <NavLink
                 to="/"
-                className="block text-gray-900 dark:text-white hover:text-blue-500"
+                className="bg-red-500 rounded-md h-10 w-20 flex items-center justify-center text-gray-900 dark:text-black  hover:scale-110 duration-150"
                 onClick={handleClick}
               >
                 Home
@@ -66,7 +69,7 @@ export const Navbar = () => {
             <li>
               <NavLink
                 to="/about"
-                className="block text-gray-900 dark:text-white hover:text-blue-500"
+                className="bg-red-500 rounded-md h-10 w-20 flex items-center justify-center  text-gray-900 dark:text-black hover:scale-110 duration-150 "
                 onClick={handleClick}
               >
                 Nosotros
@@ -75,7 +78,7 @@ export const Navbar = () => {
             <li>
               <NavLink
                 to="/products"
-                className="bg-red-500 rounded-full h-10 w-16 flex items-center justify-center hover:bg-green-900 hover:text-black  text-gray-900 dark:text-white "
+                className="bg-red-500 rounded-md h-10 w-20  flex items-center justify-center hover:bg-green-900 hover:text-black  text-gray-900 dark:text-white hover:scale-110 duration-150 "
                 onClick={handleClick}
               >
                 Menu
