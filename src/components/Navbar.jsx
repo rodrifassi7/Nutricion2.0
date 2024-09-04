@@ -60,7 +60,7 @@ export const Navbar = () => {
             <li>
               <NavLink
                 to="/"
-                className="bg-red-500 rounded-md h-10 w-20 flex items-center justify-center text-gray-900 dark:text-black  hover:scale-110 duration-150"
+                className="bg-green-700 rounded-md h-10 w-20 flex items-center justify-center text-gray-900 dark:text-black  hover:scale-110 duration-150"
                 onClick={handleClick}
               >
                 Home
@@ -69,7 +69,7 @@ export const Navbar = () => {
             <li>
               <NavLink
                 to="/about"
-                className="bg-red-500 rounded-md h-10 w-20 flex items-center justify-center  text-gray-900 dark:text-black hover:scale-110 duration-150 "
+                className="bg-green-700 rounded-md h-10 w-20 flex items-center justify-center  text-gray-900 dark:text-black hover:scale-110 duration-150 "
                 onClick={handleClick}
               >
                 Nosotros
@@ -78,7 +78,7 @@ export const Navbar = () => {
             <li>
               <NavLink
                 to="/products"
-                className="bg-red-500 rounded-md h-10 w-20  flex items-center justify-center hover:bg-green-900 hover:text-black  text-gray-900 dark:text-white hover:scale-110 duration-150 "
+                className="bg-green-700 rounded-md h-10 w-20  flex items-center justify-center hover:bg-green-900 hover:text-black  text-gray-900 dark:text-white hover:scale-110 duration-150 "
                 onClick={handleClick}
               >
                 Menu
