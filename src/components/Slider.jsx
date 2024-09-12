@@ -9,6 +9,7 @@ export const Slider = () => {
   useEffect(() => {
     const glideInstance = new Glide(glideRef.current, {
       type: "carousel",
+      peek: 40,
       startAt: 0,
       perView: 3,
       gap: 10,
