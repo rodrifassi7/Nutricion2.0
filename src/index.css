@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
- html {
- 
- /* #navbar, #footer { */
+/* html { */
 
-    --s: 100px; /* control the size*/
+/* #navbar, #footer { */
+
+/* --s: 100px; 
     --c1: #4ca770;
     --c2: #e77841;
     
@@ -18,4 +18,4 @@
       radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
       var(--c1);
     background-size: var(--s) var(--s);
-  }
+  } */

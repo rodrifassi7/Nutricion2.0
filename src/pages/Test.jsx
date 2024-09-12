@@ -1,0 +1,41 @@
+import MyImage from "../assets/images/my-image.jpg";
+import "animate.css";
+
+export const Test = () => {
+  const handleScrollToMenu = () => {
+    const menuSection = document.getElementById("menu-section");
+    if (menuSection) {
+      menuSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  return (
+    <>
+      <section className="flex  items-center justify-evenly h-[calc(100vh-64px)]  bg-stone-100 px-7">
+        <div>
+          <h1 className=" max-w-2xl mb-4  text-6xl xl:text-8xl font-serif tracking-tight leading-none text-black animate__animated animate__fadeInLeft text-center lg:text-start   ">
+            Nutrición Profesional
+          </h1>
+          <p
+            className=" max-w-2xl mb-6   text-gray-700 font-serif lg:mb-8 text-xl xl:text-2xl animate__animated animate__fadeInLeft  text-center lg:text-start"
+            style={{ animationDelay: "1s" }}
+          >
+            Deliciosas viandas preparadas por nuestra nutricionista, con una
+            variedad de productos de alta calidad y listas en un segundo.
+          </p>
+          <div className="flex flex-col justify-center items-center lg:justify-start lg:items-start">
+            <button
+              onClick={handleScrollToMenu}
+              className=" mt-7 bg-black flex flex-col  items-center      animate__animated animate__fadeInLeft animate__delay-1s  h-10 w-36 justify-center"
+              style={{ animationDelay: "1.5s" }}
+            >
+              <p className="text-white text-italic">EMPECEMOS!</p>
+            </button>
+          </div>
+        </div>
+        <div className="hidden lg:block ">
+          <img src={MyImage} alt="My Image" className="w-80 h-[500px]" />
+        </div>
+      </section>
+    </>
+  );
+};

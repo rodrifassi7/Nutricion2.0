@@ -6,7 +6,7 @@ export const ArrowDown = () => {
         strokeLinejoin="round"
         viewBox="0 0 16 16"
         width="22"
-        style={{ color: "black" }} 
+        style={{ color: "white" }} 
       >
         <path
           fillRule="evenodd"

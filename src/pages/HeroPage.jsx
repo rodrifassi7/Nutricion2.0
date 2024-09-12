@@ -11,7 +11,7 @@ export const HeroPage = () => {
 
   return (
     <div
-      className=" h-[calc(100vh-80px)] bg-cover bg-center"
+      className=" h-[calc(100vh-80px)] bg-cover bg-center "
       style={{
         backgroundImage: `url(${MyImage})`,
       }}
@@ -20,7 +20,10 @@ export const HeroPage = () => {
         <h1 className="text-center max-w-2xl mb-4  text-6xl xl:text-8xl font-extrabold tracking-tight leading-none text-white animate__animated animate__fadeInLeft ">
           Nutrición Profesional
         </h1>
-        <p className="text-center max-w-2xl mb-6 font-light text-white lg:mb-8 text-xl xl:text-2xl animate__animated animate__fadeInLeft " style={{ animationDelay: "1s" }}>
+        <p
+          className="text-center max-w-2xl mb-6 font-light text-white lg:mb-8 text-xl xl:text-2xl animate__animated animate__fadeInLeft "
+          style={{ animationDelay: "1s" }}
+        >
           Deliciosas viandas preparadas por nuestra nutricionista, con una
           variedad de productos de alta calidad y listas en un segundo.
         </p>

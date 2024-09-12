@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         'grin': '#4ca770',
+        'oransh': '#E77841'
       }
     },
   },
