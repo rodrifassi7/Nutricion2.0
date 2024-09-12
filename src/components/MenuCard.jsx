@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 export const MenuCard = ({ imageUrl, cardName, cardDescription }) => {
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-2xl dark:bg-gray-800 dark:border-gray-700">
+    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-all  dark:bg-gray-800 dark:border-gray-700">
       <div className="h-48 overflow-hidden">
         <img
           className="w-full h-full object-cover"
