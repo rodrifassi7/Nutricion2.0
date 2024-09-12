@@ -1,5 +1,6 @@
 import MyImage from "../assets/images/my-image.jpg";
 import "animate.css";
+import WhatsApp from "../assets/images/whatsapp";
 
 export const Test = () => {
   const handleScrollToMenu = () => {
@@ -12,6 +13,15 @@ export const Test = () => {
     <>
       <section className="flex  items-center justify-evenly h-[calc(100vh-64px)]  bg-stone-100 px-7">
         <div>
+          <div className="fixed bottom-14 right-10 z-50 flex items-center justify-center ">
+            <a
+              href="https://wa.me/5493512076229?text=Hola!%20Quiero%20más%20entregar%20la%20cola%20sensual%20rodri"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <WhatsApp />
+            </a>
+          </div>
           <h1 className=" max-w-2xl mb-4  text-6xl xl:text-8xl font-serif tracking-tight leading-none text-black animate__animated animate__fadeInLeft text-center lg:text-start   ">
             Nutrición Profesional
           </h1>
