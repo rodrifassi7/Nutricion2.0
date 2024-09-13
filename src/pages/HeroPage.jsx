@@ -1,6 +1,6 @@
 import MyImage from "../assets/images/my-image.jpg";
 import { ArrowDown } from "../components/ArrowDown";
-import "animate.css";
+// import "animate.css";
 export const HeroPage = () => {
   const handleScrollToMenu = () => {
     const menuSection = document.getElementById("menu-section");
@@ -29,7 +29,7 @@ export const HeroPage = () => {
         </p>
         <button
           onClick={handleScrollToMenu}
-          className=" mt-7 bg-grin rounded-xl flex flex-col  items-center  hover:bg-green-900 hover:text-black  text-gray-900 dark:text-white  animate__animated animate__fadeInLeft animate__delay-1s  h-16 w-32 justify-center"
+          className=" mt-72 bg-red-500 rounded-xl flex flex-col  items-center  hover:bg-green-900 hover:text-black  text-gray-900 dark:text-white  animate__animated animate__fadeInLeft animate__delay-1s  h-16 w-32 justify-center"
           style={{ animationDelay: "1.5s" }}
         >
           <p>EMPECEMOS!</p>

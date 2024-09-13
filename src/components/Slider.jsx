@@ -18,10 +18,10 @@ export const Slider = () => {
       animationTimingFunc: "ease-out",
       breakpoints: {
         768: {
-          perView: 2, // Número de slides visibles en pantallas pequeñas
+          perView: 2,
         },
         480: {
-          perView: 1, // Por ejemplo, 1 slide visible en pantallas muy pequeñas
+          perView: 1,
         },
       },
     });

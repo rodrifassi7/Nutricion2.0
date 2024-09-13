@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        questrial: ['Questrial', 'sans-serif'],
+      },
       colors: {
         'grin': '#4ca770',
         'oransh': '#E77841'

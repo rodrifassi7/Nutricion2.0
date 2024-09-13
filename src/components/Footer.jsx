@@ -4,27 +4,26 @@ import { getYear } from "../helpers/date";
 
 export const Footer = () => {
   return (
-    <footer id="footer" className="bg-white dark:bg-gray-900">
+    <footer id="footer" className="bg-stone-100 ">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div className="md:flex md:justify-between flex justify-between">
-          <div className="mb-6 md:mb-0 flex align-center">
-            <Link
-              to="/"
-              className="flex items-center space-x-3 rtl:space-x-reverse pl-7"
-            >
-              <img
-                src={Logo}
-                className="h-12 rounded-full"
-                alt="Nutricion Profesional Logo"
-              />
-            </Link>
-          </div>
+        <Link
+          to="/"
+          className="flex items-center space-x-3 rtl:space-x-reverse pl-7"
+        >
+          <img
+            src={Logo}
+            className="h-12 rounded-full"
+            alt="Nutricion Profesional Logo"
+          />
+        </Link>
+        <div className="md:flex md:justify-center flex justify-center">
+          <div className="mb-6 md:mb-0 flex align-center"></div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-400 uppercase">
                 ???????
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-500  font-medium">
                 <li className="mb-4">
                   <a href="" className="hover:underline">
                     ????
@@ -41,10 +40,10 @@ export const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-400">
                 Seguinos
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-500 dark:text-gray-700 font-medium">
                 <li className="mb-4">
                   <a href="" className="hover:underline ">
                     Instagram
@@ -60,7 +59,7 @@ export const Footer = () => {
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div className="sm:flex sm:items-center sm:justify-between">
+        <div className="sm:flex sm:items-center sm:justify-center">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © {getYear()}{" "}
             <a href="" className="hover:underline">
