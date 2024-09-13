@@ -42,8 +42,8 @@ export const Slider = () => {
               imageUrl={
                 "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
               }
-              cardDescription={"salmon con patatas"}
-              cardName={"1"}
+              // cardDescription={"Viandas empresariales"}
+              cardName={"Viandas empresariales"}
             />
           </li>
           <li className="glide__slide">
@@ -51,8 +51,8 @@ export const Slider = () => {
               imageUrl={
                 "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
               }
-              cardDescription={"salmon con patatas"}
-              cardName={"2"}
+              // cardDescription={"salmon con patatas"}
+              cardName={"Packs semanales"}
             />
           </li>
           <li className="glide__slide">
@@ -60,8 +60,8 @@ export const Slider = () => {
               imageUrl={
                 "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
               }
-              cardDescription={"salmon con patatas"}
-              cardName={"3"}
+              // cardDescription={"salmon con patatas"}
+              cardName={"Saludable"}
             />
           </li>
           <li className="glide__slide">
@@ -69,8 +69,8 @@ export const Slider = () => {
               imageUrl={
                 "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
               }
-              cardDescription={"salmon con patatas"}
-              cardName={"4"}
+              // cardDescription={"salmon con patatas"}
+              cardName={"Descenso"}
             />
           </li>
           <li className="glide__slide">
@@ -78,8 +78,44 @@ export const Slider = () => {
               imageUrl={
                 "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
               }
-              cardDescription={"salmon con patatas"}
-              cardName={"5"}
+              // cardDescription={"salmon con patatas"}
+              cardName={"Sin sal"}
+            />
+          </li>
+          <li className="glide__slide">
+            <MenuCard
+              imageUrl={
+                "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              }
+              // cardDescription={"salmon con patatas"}
+              cardName={"Sin TACC"}
+            />
+          </li>
+          <li className="glide__slide">
+            <MenuCard
+              imageUrl={
+                "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              }
+              // cardDescription={"salmon con patatas"}
+              cardName={"Apto diabético"}
+            />
+          </li>
+          <li className="glide__slide">
+            <MenuCard
+              imageUrl={
+                "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              }
+              // cardDescription={"salmon con patatas"}
+              cardName={"Meriendas saludables"}
+            />
+          </li>
+          <li className="glide__slide">
+            <MenuCard
+              imageUrl={
+                "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              }
+              // cardDescription={"salmon con patatas"}
+              cardName={"Capacitaciones y charlas"}
             />
           </li>
         </ul>
