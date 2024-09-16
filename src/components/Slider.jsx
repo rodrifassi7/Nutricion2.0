@@ -15,6 +15,7 @@ export const Slider = () => {
       gap: 10,
       rewind: true,
       autoplay: 2000,
+      animationDuration: 2000,
       animationTimingFunc: "ease-out",
       breakpoints: {
         768: {

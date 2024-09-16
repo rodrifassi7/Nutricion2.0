@@ -15,7 +15,7 @@ export const Test = () => {
         <div>
           <div className="fixed bottom-14 right-10 z-50 flex items-center justify-center ">
             <a
-              href="https://wa.me/5493512076229?text=Hola!%20Quiero%20más%20entregar%20la%20cola%20sensual%20rodri"
+              href="https://wa.me/5493512076229?text=Viven%20en%20un%20Country%20"
               target="_blank"
               rel="noopener noreferrer"
             >
