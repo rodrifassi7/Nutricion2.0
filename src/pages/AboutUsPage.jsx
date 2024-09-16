@@ -5,7 +5,7 @@ import { Footer } from "../components/Footer";
 export const AboutUsPage = () => {
   return (
     <>
-      <div className=" flex flex-col items-center justify-center h-[calc(100vh-64px)] bg-grin   ">
+      <div className=" flex flex-col items-center justify-center h-[calc(100vh-64px)]   ">
         <div className="flex flex-col-reverse gap-4 lg:flex-row items-center justify-center h-80 lg:h-full px-10">
           <img
             src={MyImage}
