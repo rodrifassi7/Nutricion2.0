@@ -6,7 +6,7 @@ import { Test } from "./Test";
 
 export const HomePage = () => {
   return (
-    <div className="">
+    <div>
       <Test />
       <MenuSection />
       <Mapa />
