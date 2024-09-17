@@ -13,6 +13,7 @@ export const MenuSection = () => {
         <div className="w-full ">
           <Slider />
         </div>
+       
       </div>
     </>
   );
