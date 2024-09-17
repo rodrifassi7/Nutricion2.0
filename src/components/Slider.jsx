@@ -19,9 +19,11 @@ export const Slider = () => {
       animationTimingFunc: "ease-out",
       breakpoints: {
         768: {
+          gap: 10,
           perView: 2,
         },
         480: {
+          gap: 20,
           perView: 1,
         },
       },

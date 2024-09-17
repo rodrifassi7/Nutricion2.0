@@ -5,12 +5,12 @@ import { Footer } from "../components/Footer";
 export const AboutUsPage = () => {
   return (
     <>
-      <div className=" flex flex-col items-center justify-center h-[calc(100vh-64px)]   ">
+      <div className=" bg-stone-100 flex flex-col items-center justify-center h-[calc(100vh-64px)]   ">
         <div className="flex flex-col-reverse gap-4 lg:flex-row items-center justify-center h-80 lg:h-full px-10">
           <img
             src={MyImage}
             alt="My Image"
-            className="max-w-full max-h-full animate__animated animate__slideInUp "
+            className="max-w-full max-h-full animate__animated animate__fadeIn "
             style={{ animationDelay: "1s" }}
           />
 

@@ -8,7 +8,7 @@ export const NavBarTest = () => {
   return (
     <nav
       id="header-nav"
-      className="w-full h-16 z-50 sticky top-0 bg-stone-100 border-b-[1px] border-black "
+      className="w-full h-16 z-50 sticky top-0 bg-stone-100   "
     >
       <div className="max-w-screen-xl flex items-center justify-between w-full h-full px-7">
         <Link to="/" className="flex-shrink-0">
