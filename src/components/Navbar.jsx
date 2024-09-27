@@ -3,18 +3,15 @@ import { useMenuToggle } from "../hooks/useMenuToggle";
 import Logo from "../assets/images/logo.png";
 
 export const Navbar = () => {
-  const { isMenuOpen, handleClick } = useMenuToggle();
+  const { handleClick } = useMenuToggle();
 
   return (
     <nav
-      id="navbar"
-      className="w-full border-gray-200 bg-gray-50 dark:bg-stone-100 dark:border-gray-700 h-20 z-50 sticky top-0"
+      id="header-nav"
+      className="w-full h-16 z-[999] sticky top-0 bg-stone-100 border-b-[1px]  "
     >
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between pt-4 px-7">
-        <Link
-          to="/"
-          className="flex items-center space-x-3 rtl:space-x-reverse pl-7"
-        >
+      <div className="max-w-screen-xl flex items-center justify-between w-full h-full px-7">
+        <Link to="/" className="flex-shrink-0">
           <img
             src={Logo}
             className="h-12 rounded-full"
@@ -22,65 +19,20 @@ export const Navbar = () => {
           />
         </Link>
 
-        <div className="lg:hidden flex items-center space-x-3 pr-7">
-          <button
-            type="button"
-            className="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-black dark:hover:bg-orange-500 dark:focus:ring-gray-600"
-            aria-expanded={isMenuOpen ? "true" : "false"}
-            onClick={handleClick}
-          >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-        </div>
-
-        <div
-          className={`
-            transform transition-all duration-500 ease-in-out
-        ${
-          isMenuOpen ? "block" : "hidden"
-        }  w-full lg:flex lg:items-center lg:w-auto mt-4 lg:mt-0 bg-gray-50 dark:bg-stone-100  inset-0 lg:relative lg:inset-auto lg:top-auto lg:left-auto z-50 rounded-b-md   
-      `}
-        >
-          <ul className="flex flex-col lg:flex-row lg:space-x-4 lg:space-y-0 space-y-4 lg:text-center items-center   pb-4 md:pb-0 rounded-b-md  ">
-            <li>
-              <NavLink
-                to="/"
-                className="bg-orange-500 rounded-md h-10 w-20 flex items-center justify-center text-gray-900 dark:text-black  hover:scale-110 duration-150"
-                onClick={handleClick}
-              >
+        <div className="flex-grow">
+          <ul className="flex justify-center space-x-10 text-gray-900 dark:text-black font-normal ">
+            <li className="hover:bg-red-400    ">
+              <NavLink to="/" onClick={handleClick}>
                 Home
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/about"
-                className="bg-orange-500 rounded-md h-10 w-20 flex items-center justify-center  text-gray-900 dark:text-black hover:scale-110 duration-150 "
-                onClick={handleClick}
-              >
+            <li className="hover:bg-red-400">
+              <NavLink to="/about" onClick={handleClick}>
                 Nosotros
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/products"
-                className="bg-orange-500 rounded-md h-10 w-20  flex items-center justify-center hover:bg-green-900 hover:text-black  text-gray-900 dark:text-white hover:scale-110 duration-150 "
-                onClick={handleClick}
-              >
+            <li className="hover:bg-red-400    ">
+              <NavLink to="/menu" onClick={handleClick}>
                 Menu
               </NavLink>
             </li>

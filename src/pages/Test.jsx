@@ -46,7 +46,8 @@ export const Test = () => {
           <img
             src={MyImage}
             alt="My Image"
-            className="w-full h-[250px] lg:h-[500px] animate__animated animate__fadeInUp " style={{ animationDelay: "1s" }}
+            className="w-full h-[250px] lg:h-[500px] animate__animated animate__fadeInUp "
+            style={{ animationDelay: "1s" }}
           />
         </div>
       </section>

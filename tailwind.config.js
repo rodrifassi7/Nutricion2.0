@@ -10,8 +10,8 @@ export default {
         questrial: ['Questrial', 'sans-serif'],
       },
       colors: {
-        'grin': '#4ca770',
-        'oransh': '#E77841'
+        'grin': '#399f3e',
+        'oransh': '#e8722a'
       }
     },
   },

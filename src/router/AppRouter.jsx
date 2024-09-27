@@ -1,17 +1,16 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import { HomePage, ProductsPage, AboutUsPage } from "../pages";
-// import { Navbar } from "../components/Navbar";
-import { NavBarTest } from "../components/NavBarTest";
+import { HomePage, AboutUsPage } from "../pages";
+import { MenuPage } from "../pages/MenuPage";
+import { Navbar } from "../components/Navbar";
 
 export const AppRouter = () => {
   return (
     <>
-      {/* <Navbar /> */}
-      <NavBarTest />
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUsPage />} />
-        <Route path="/products" element={<ProductsPage />} />
+        <Route path="/menu" element={<MenuPage />} />
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
