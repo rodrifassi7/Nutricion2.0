@@ -3,26 +3,31 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import customMarkerIcon from "../assets/images/logo.png";
 
-const customIcon = L.icon({
-  iconUrl: customMarkerIcon,
+const customIcon = L.divIcon({
+  html: `<div style="
+    background-image: url(${customMarkerIcon});
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #fff;">
+  </div>`,
   iconSize: [32, 32],
-  iconAnchor: [19, 30],
-  popupAnchor: [0, -38],
+  className: "custom-icon",
 });
 
+customIcon.className = "hover:bg-red-400";
+
 export const Mapa = () => {
-  const position = [-43.25566963850785, -65.30424715991353]; // Tu posición
+  const position = [-43.25561963850785, -65.30424715991353];
 
   return (
-    <section className="flex flex-col items-center justify-center py-12 bg-gray-100">
-      {/* Título y descripción */}
-      <h2 className="text-3xl font-bold text-gray-800 mb-4">Encuéntranos</h2>
-      <p className="text-lg text-gray-600 mb-8 text-center max-w-2xl">
-        Visítanos en nuestra ubicación para conocer más sobre nuestros productos
-        y servicios. Usa el mapa interactivo para encontrarnos fácilmente.
-      </p>
+    <div className="bg-gray-100 p-7">
+        <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Encontranos</h2>
+    <section className="flex  items-center justify-center gap-2 p-7 ">
+    
 
-      {/* Mapa y contenedor estilizado */}
+     
       <div className="w-full max-w-4xl h-96 shadow-lg rounded-lg overflow-hidden">
         <MapContainer
           center={position}
@@ -37,9 +42,8 @@ export const Mapa = () => {
             <Popup>¡Acá estamos! Visítanos en nuestra ubicación.</Popup>
           </Marker>
         </MapContainer>
-      </div>
 
-      {/* Botones debajo del mapa */}
+      
       <div className="mt-8 space-x-4">
         <a
           href={`https://www.google.com/maps?q=${position[0]},${position[1]}`}
@@ -50,6 +54,15 @@ export const Mapa = () => {
           Ver en Google Maps
         </a>
       </div>
+      </div>
+      <div>
+        <p className="text-lg text-gray-600 mb-8 text-center ">
+          Visítanos en <span> Paraguay 55, Trelew</span>
+        </p>
+      </div>
+
     </section>
+    </div>
+
   );
 };
