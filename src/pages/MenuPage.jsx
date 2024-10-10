@@ -6,7 +6,8 @@ export const MenuPage = () => {
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Menú Semanal</h1>
+              <h1 className="my-10 max-w-2xl mx-auto text-4xl xl:text-6xl font-extrabold tracking-tight leading-none text-oransh">
+              Menú Semanal</h1>
           <p className="text-lg text-gray-600 mb-6 text-center max-w-lg">
             Consulta nuestro menú saludable, especialmente diseñado para una nutrición balanceada.
             Recordá que actualizamos el menú cada semana para ofrecerte más opciones.
