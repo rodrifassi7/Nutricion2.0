@@ -8,9 +8,9 @@ export const Navbar = () => {
   return (
     <nav
       id="header-nav"
-      className="w-full h-16 z-[999] sticky top-0 bg-stone-100 border-b-[1px]  "
+      className="w-full h-16 z-[999] sticky top-0 bg-stone-100 border-b-[1px] md:px-28 px-7 "
     >
-      <div className="max-w-screen-xl flex items-center justify-between w-full h-full px-7">
+      <div className="max-w-screen-xl flex items-center justify-between w-full h-full ">
         <Link to="/" className="flex-shrink-0">
           <img
             src={Logo}
@@ -20,18 +20,16 @@ export const Navbar = () => {
         </Link>
 
         <div className="flex-grow">
-          <ul className="flex justify-center space-x-10 text-gray-900 dark:text-black font-normal ">
-            <li className="hover:bg-red-400    ">
-              <NavLink to="/" onClick={handleClick}>
-                Home
+          <ul className="flex justify-center space-x-10 text-gray-900 dark:text-black text-md ">
+              <NavLink to="/" onClick={handleClick} className="hover:bg-oransh px-4 py-2 rounded-lg  hover:text-white duration-500   ">
+                Inicio
               </NavLink>
-            </li>
-            <li className="hover:bg-red-400">
+            <li className="hover:bg-oransh px-4 py-2 rounded-lg hover:text-white duration-500">
               <NavLink to="/about" onClick={handleClick}>
                 Nosotros
               </NavLink>
             </li>
-            <li className="hover:bg-red-400    ">
+            <li className="hover:bg-oransh px-4 py-2 rounded-lg hover:text-white duration-500    ">
               <NavLink to="/menu" onClick={handleClick}>
                 Menu
               </NavLink>

@@ -11,19 +11,19 @@ export const Slider = () => {
       type: "carousel",
       peek: 40,
       startAt: 0,
-      perView: 3,
-      gap: 10,
+      perView: 4,
+      gap: 5, // Reduce el espacio entre las cards
       rewind: true,
-      autoplay: 2000,
-      animationDuration: 2000,
-      animationTimingFunc: "ease-out",
+      autoplay: 1,
+      animationDuration: 5000, 
+      animationTimingFunc: "linear",
       breakpoints: {
         768: {
-          gap: 10,
+          gap: 5, // Reduce también en vistas pequeñas
           perView: 2,
         },
         480: {
-          gap: 20,
+          gap: 3, // Aún menor en pantallas pequeñas si es necesario
           perView: 1,
         },
       },

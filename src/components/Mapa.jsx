@@ -20,7 +20,7 @@ export const Mapa = () => {
   const position = [-43.25561963850785, -65.30424715991353];
 
   return (
-    <div className="bg-gray-100 p-7">
+    <div className="bg-gray-100 p-7 md:px-28 px-7">
        <div className="text-center">
     <h1 className="my-10 max-w-2xl mx-auto text-4xl xl:text-6xl font-extrabold tracking-tight leading-none text-oransh">
       ¿Dónde Estamos?

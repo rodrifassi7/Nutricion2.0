@@ -4,7 +4,7 @@ import { getYear } from "../helpers/date";
 
 export const Footer = () => {
   return (
-    <footer id="footer" className="bg-stone-100 ">
+    <footer id="footer" className="bg-stone-100  md:px-28 px-7">
       <div className="mx-auto  w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <Link
           to="/"
@@ -12,19 +12,19 @@ export const Footer = () => {
         >
           <img
             src={Logo}
-            className="h-12 rounded-full"
+            className="h-12 rounded-full hidden md:block"
             alt="Nutricion Profesional Logo"
           />
         </Link>
         <div className="md:flex md:justify-center flex justify-center">
           <div className="mb-6 md:mb-0 flex align-center"></div>
           <div className="grid grid-cols-2 gap-8 sm:gap-36 sm:grid-cols-2">
-          <div>
+            <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-400">
                 Conectemos
               </h2>
-              <ul className="text-gray-500 dark:text-gray-700 font-medium">
-                <li className="mb-4">
+              <ul className="flex  flex-col gap-y-2 text-gray-500 dark:text-gray-700 font-medium">
+                <li >
                   <a href="" className="hover:underline ">
                     Instagram
                   </a>
@@ -61,7 +61,6 @@ export const Footer = () => {
                 </li>
               </ul>
             </div>
-            
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
