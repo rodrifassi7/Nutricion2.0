@@ -5,7 +5,7 @@ import Logo from "../assets/images/logo.png";
 
 export const AboutUsPage = () => {
   return (
-    <div className="bg-stone-100">
+    <div className="bg-stone-100 md:px-28 px-7">
       <div className="  flex flex-col items-center justify-center h-[calc(100vh-64px)]   ">
         <div className="flex flex-col-reverse gap-4 lg:flex-row items-center justify-center h-80 lg:h-full px-10">
           <img
@@ -16,7 +16,7 @@ export const AboutUsPage = () => {
           />
 
           <section className=" text-center ">
-            <h1 className="mb-7 text-center max-w-2xl text-4xl xl:text-6xl font-extrabold tracking-tight leading-none text-oransh font-questrial animate__animated  animate__fadeInLeft">
+            <h1 className="mb-7 text-center max-w-2xl text-4xl xl:text-6xl font-custom tracking-tight leading-none text-oransh  animate__animated  animate__fadeInLeft">
               ¿Por qué elegirnos?
             </h1>
             <p

@@ -14,7 +14,7 @@ export const Test = () => {
   return (
     <>
       <section
-        className="flex flex-col md:flex-col lg:flex-row items-center justify-center md:justify-end h-[calc(100vh-64px)] bg-stone-100 -mt-16 md:mt-0 gap-10 md:px-28 px-7"
+        className="flex flex-col md:flex-col lg:flex-row items-center justify-center sm:justify-end h-[calc(100vh-64px)] bg-stone-100 -mt-16 md:mt-0 gap-10 md:px-28 px-7"
         style={{
           backgroundImage: `url(${MyImage})`,
           backgroundSize: "cover",

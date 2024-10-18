@@ -14,7 +14,7 @@ export const Navbar = () => {
         <Link to="/" className="flex-shrink-0">
           <img
             src={Logo}
-            className="h-12 rounded-full"
+            className="h-12 rounded-full  hover:scale-110 duration-200"
             alt="Nutricion Profesional Logo"
           />
         </Link>
