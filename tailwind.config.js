@@ -8,12 +8,14 @@ export default {
     extend: {
       fontFamily: {
         questrial: ['Questrial', 'sans-serif'],
-      custom: ['Dreaming', 'sans-serif'],  // Usa el nombre que asignaste en @font-face
+      custom: ['Dreaming', 'sans-serif'],  
+      montserrat: ['Montserrat', 'sans-serif']
 
       },
       colors: {
         'grin': '#399f3e',
-        'oransh': '#e8722a'
+        'oransh': '#e8722a',
+        'grei' : '#424140'
       }
       
     },

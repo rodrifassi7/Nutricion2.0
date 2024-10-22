@@ -3,11 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-     font-family: 'Dreaming';
-     src: url('./assets/fonts/dreamingOutloud2.woff2') format('woff2'),
-          url('./assets/fonts/dreamingOutloud1.woff') format('woff');
-     font-weight: normal;
-     font-style: normal;
-   }
+  font-family: "Dreaming";
+  src: url("./assets/fonts/dreamingOutloud2.woff2") format("woff2"),
+    url("./assets/fonts/dreamingOutloud1.woff") format("woff");
+
+  font-weight: normal;
+  font-style: normal;
+}
