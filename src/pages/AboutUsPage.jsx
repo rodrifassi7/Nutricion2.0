@@ -1,7 +1,7 @@
 import MyImage from "../assets/images/Nutricionista.webp";
 import "animate.css";
 import { Footer } from "../components/Footer";
-import Logo from "../assets/images/logo.png";
+import Logo from "../assets/images/NPLOGO.png";
 
 export const AboutUsPage = () => {
   return (

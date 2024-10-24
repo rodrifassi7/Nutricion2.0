@@ -11,7 +11,7 @@ export const ImgText = () => {
     <div className="flex flex-col space-y-1 max-h-auto items-end">
       {texts.map((text, index) => (
         <div key={index} className="flex items-center space-x-2">
-          <span className="text-lg leading-none">{text}</span>
+          <span className="text-xl leading-none">{text}</span>
           <img
             src={imageSrc}
             alt={`Imagen ${index + 1}`}
