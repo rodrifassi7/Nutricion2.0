@@ -1,4 +1,4 @@
-import MyImage from "../assets/images/hero2.jpg";
+import MyImage from "../assets/images/Hero2.jpg";
 import "animate.css";
 import WhatsApp from "../assets/logos/whatsapp";
 import { BotonReu } from "../components/BotonReu";
