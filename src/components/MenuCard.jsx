@@ -9,8 +9,8 @@ export const MenuCard = ({ imageUrl, cardName }) => {
           alt={cardName}
         />
       </div>
-      <div className=" text-center  ">
-        <h5 className=" text-xl md:text-2xl  tracking-tight  text-black text-start font-  ">
+      <div className=" text-center mt-2  ">
+        <h5 className=" text-xl md:text-2xl  tracking-tight  text-black text-center   ">
           {cardName}
         </h5>
       </div>

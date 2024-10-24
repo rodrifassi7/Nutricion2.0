@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { useMenuToggle } from "../hooks/useMenuToggle";
-import Logo from "../assets/images/logo.png";
+import Logo from "../assets/images/NPLOGO.png";
 
 export const Navbar = () => {
   const { handleClick } = useMenuToggle();
@@ -14,7 +14,7 @@ export const Navbar = () => {
         <Link to="/" className="flex-shrink-0">
           <img
             src={Logo}
-            className="h-12 rounded-full  hover:scale-110 duration-200"
+            className="h-14 rounded-full  hover:scale-110 duration-200"
             alt="Nutricion Profesional Logo"
           />
         </Link>

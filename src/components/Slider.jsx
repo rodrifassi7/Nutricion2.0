@@ -12,18 +12,18 @@ export const Slider = () => {
       peek: 40,
       startAt: 0,
       perView: 4,
-      gap: 5, // Reduce el espacio entre las cards
+      gap: 5,
       rewind: true,
       autoplay: 1,
-      animationDuration: 5000, 
+      animationDuration: 5000,
       animationTimingFunc: "linear",
       breakpoints: {
         768: {
-          gap: 5, // Reduce también en vistas pequeñas
+          gap: 5,
           perView: 2,
         },
         480: {
-          gap: 3, // Aún menor en pantallas pequeñas si es necesario
+          gap: 3,
           perView: 1,
         },
       },
@@ -82,7 +82,7 @@ export const Slider = () => {
                 "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
               }
               // cardDescription={"salmon con patatas"}
-              cardName={"Sin sal"}
+              cardName={"Hiposódico"}
             />
           </li>
           <li className="glide__slide">
@@ -91,7 +91,7 @@ export const Slider = () => {
                 "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
               }
               // cardDescription={"salmon con patatas"}
-              cardName={"Sin TACC"}
+              cardName={"Sin Gluten"}
             />
           </li>
           <li className="glide__slide">
