@@ -43,25 +43,13 @@ export const Mapa = () => {
           </MapContainer>
         </div>
 
-        <div className="text-center">
+        <div className="text-center pl-1">
           <p className="text-lg text-gray-600 mb-8">
             Visítanos en <span>Paraguay 55, Trelew</span>
           </p>
           <p className="text-lg text-gray-600 mb-4">
-            Teléfono: <span id="phone-number">+1 234 567 890</span> {/* Reemplaza con tu número */}
+            Teléfono: <br /> <span id="phone-number">+ 54 2804 38 5269</span>{" "}
           </p>
-          <div className="flex justify-center space-x-4">
-            {/* Aquí puedes agregar tus iconos de redes sociales */}
-            <div className="text-gray-700 hover:text-gray-900">
-              {/* <img src={tuIconoWhatsapp} alt="WhatsApp" className="h-6 w-6" /> */}
-            </div>
-            <div className="text-gray-700 hover:text-gray-900">
-              {/* <img src={tuIconoInstagram} alt="Instagram" className="h-6 w-6" /> */}
-            </div>
-            <div className="text-gray-700 hover:text-gray-900">
-              {/* <img src={tuIconoFacebook} alt="Facebook" className="h-6 w-6" /> */}
-            </div>
-          </div>
         </div>
       </section>
 
