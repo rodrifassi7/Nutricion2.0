@@ -1,25 +1,15 @@
-import imageSrc from "../assets/images/corazon.png";
+import PropTypes from 'prop-types';
 
-export const ImgText = () => {
-  const texts = [
-    "Viandas saludables en Trelew",
-    "Hechas con amor",
-    "Diseñadas por una nutricionista",
-  ];
 
-  return (
-    <div className="flex flex-col space-y-1 max-h-auto items-end">
-      {texts.map((text, index) => (
-        <div key={index} className="flex items-center space-x-2">
-          <span className="text-xl leading-none">{text}</span>
-          <img
-            src={imageSrc}
-            alt={`Imagen ${index + 1}`}
-            className="w-8 h-8 rounded-full"
-          />
+export const ImgText = ({ text, imageSrc, delay }) => (
+  <div className={`flex items-center space-x-2 animate__animated animate__fadeInLeft animate__delay-${delay}`}>
+    <span className="text-xl leading-none">{text}</span>
+    <img src={imageSrc} alt={`Imagen de corazon verde`} className="w-8 h-8 rounded-full" />
+  </div>
+);
 
-        </div>
-      ))}
-    </div>
-  );
+ImgText.propTypes = {
+  text: PropTypes.string.isRequired,
+  imageSrc: PropTypes.string.isRequired,
+  delay: PropTypes.string.isRequired,
 };

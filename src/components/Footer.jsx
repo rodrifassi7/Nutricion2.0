@@ -1,75 +1,81 @@
-import { Link } from "react-router-dom";
-import Logo from "../assets/images/NPLOGO.png";
 import { getYear } from "../helpers/date";
+import igpng from "../assets/icons/igpng.png";
+import facebook from "../assets/icons/facebook.png";
+import whatsapp from "../assets/icons/whatsapp.png";
+import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer id="footer" className="bg-stone-100  md:px-28 px-7">
-      <div className="mx-auto  w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <Link
-          to="/"
-          className="flex items-center space-x-3 rtl:space-x-reverse pl-7"
-        >
-          <img
-            src={Logo}
-            className="h-12 rounded-full hidden md:block"
-            alt="Nutricion Profesional Logo"
-          />
-        </Link>
-        <div className="md:flex md:justify-center flex justify-center">
-          <div className="mb-6 md:mb-0 flex align-center"></div>
+    <footer id="footer" className="bg-grei text-white md:px-28 px-7">
+      <div className="mx-auto w-full max-w-screen-xl p-4 lg:py-4">
+        <div className="md:flex md:justify-center flex justify-center mt-2">
           <div className="grid grid-cols-2 gap-8 sm:gap-36 sm:grid-cols-2">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-400">
+              <h2 className="mb-4 text-sm font-semibold text-gray-200 uppercase">
                 Conectemos
               </h2>
-              <ul className="flex  flex-col gap-y-2 text-gray-500 dark:text-gray-700 font-medium">
-                <li >
-                  <a href="" className="hover:underline ">
-                    Instagram
+              <ul className="flex  gap-x-4 text-gray-400 font-medium">
+                <li className="self-center hover:scale-110">
+                  <a
+                    href="https://www.instagram.com/nutricionprofesionaltw/#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={igpng} alt="Instagram" className="w-8 h-8 gap-2" />
                   </a>
                 </li>
-                <li>
-                  <a href="" className="hover:underline">
-                    Facebook
+                <li className="self-center hover:scale-110">
+                  <a
+                    href="https://www.facebook.com/nutricionprofesionaltw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={facebook} alt="Facebook" className="w-8 h-8 gap-2" />
                   </a>
                 </li>
-                <li>
-                  <a href="" className="hover:underline">
-                    Whatsapp
+                <li className="self-center hover:scale-110">
+                  <a
+                    href="https://wa.me/542804385269"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={whatsapp} alt="Whatsapp" className="w-8 h-8 gap-2" />
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-400 uppercase">
+              <h2 className="mb-4 text-sm font-semibold text-gray-200 uppercase">
                 Recursos
               </h2>
-              <ul className="text-gray-900  font-medium">
-                <li className="mb-4">
-                  <a href="" className="hover:underline">
-                    Nosotros
-                  </a>
+              <ul className="text-gray-400 font-medium">
+                <li className="mb-2">
+                  <NavLink
+                    to="/about"
+                    className="hover:underline hover:text-[#399f3e]"
+                  >
+                    Preguntas Frecuentes
+                  </NavLink>
                 </li>
                 <li>
-                  <a
-                    href="https://tailwindcss.com/"
-                    className="hover:underline"
+                  <NavLink
+                    to="/about"
+                    className="hover:underline hover:text-[#399f3e]"
                   >
-                    no se
-                  </a>
+                    Nosotros
+                  </NavLink>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr className="my-4 border-gray-700 sm:mx-auto lg:my-4" />
         <div className="sm:flex sm:items-center sm:justify-center">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span className="text-sm text-gray-400 sm:text-center">
             © {getYear()}{" "}
-            <a href="" className="hover:underline">
+            <span to="/" className="hover:underline hover:text-[#e9772a]">
               Nutricion Profesional™
-            </a>
+            </span>
             . Todos los derechos reservados.
           </span>
         </div>

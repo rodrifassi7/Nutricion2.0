@@ -20,13 +20,13 @@ export const Mapa = () => {
   const position = [-43.25561963850785, -65.30424715991353];
 
   return (
-    <div className="bg-gray-100 p-7 md:px-28 px-7">
-       <div className="text-center">
-    <h1 className="my-10 max-w-2xl mx-auto text-4xl xl:text-6xl font-custom tracking-tight leading-none text-oransh">
-      ¿Dónde Estamos?
-    </h1>
-  </div>
-      <section className="flex flex-col-reverse  lg:flex-row justify-evenly items-center">
+    <div className="p-7 md:px-28">
+      <div className="text-center">
+        <h1 className="my-10 max-w-2xl mx-auto text-4xl xl:text-6xl font-custom tracking-tight leading-none text-oransh">
+          ¿Dónde Estamos?
+        </h1>
+      </div>
+      <section className="flex flex-col-reverse lg:flex-row justify-evenly items-center">
         <div className="w-full max-w-4xl h-96 shadow-lg rounded-lg overflow-hidden">
           <MapContainer
             center={position}
@@ -43,10 +43,25 @@ export const Mapa = () => {
           </MapContainer>
         </div>
 
-        <div>
-          <p className="text-lg text-gray-600 mb-8 text-center">
+        <div className="text-center">
+          <p className="text-lg text-gray-600 mb-8">
             Visítanos en <span>Paraguay 55, Trelew</span>
           </p>
+          <p className="text-lg text-gray-600 mb-4">
+            Teléfono: <span id="phone-number">+1 234 567 890</span> {/* Reemplaza con tu número */}
+          </p>
+          <div className="flex justify-center space-x-4">
+            {/* Aquí puedes agregar tus iconos de redes sociales */}
+            <div className="text-gray-700 hover:text-gray-900">
+              {/* <img src={tuIconoWhatsapp} alt="WhatsApp" className="h-6 w-6" /> */}
+            </div>
+            <div className="text-gray-700 hover:text-gray-900">
+              {/* <img src={tuIconoInstagram} alt="Instagram" className="h-6 w-6" /> */}
+            </div>
+            <div className="text-gray-700 hover:text-gray-900">
+              {/* <img src={tuIconoFacebook} alt="Facebook" className="h-6 w-6" /> */}
+            </div>
+          </div>
         </div>
       </section>
 

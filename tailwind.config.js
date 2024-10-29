@@ -15,7 +15,13 @@ export default {
       colors: {
         'grin': '#399f3e',
         'oransh': '#e8722a',
-        'grei' : '#424140'
+        'grei' : '#424140',
+        'janaran': '#ecb089',
+        'sweetgrin': '#8dcd90',
+        'sweetoransh': '#ecb089',
+
+
+
       }
       
     },

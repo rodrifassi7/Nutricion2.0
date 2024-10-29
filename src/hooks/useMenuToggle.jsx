@@ -5,6 +5,7 @@ export const useMenuToggle = () => {
 
   const handleClick = () => {
     setIsMenuOpen((prevState) => !prevState);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return {
