@@ -2,6 +2,8 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import customMarkerIcon from "../assets/images/logo.png";
+import mapIcon from "../assets/icons/map.png";
+import phoneIcon from "../assets/icons/phone.png";
 
 const customIcon = L.divIcon({
   html: `<div style="
@@ -44,11 +46,13 @@ export const Mapa = () => {
         </div>
 
         <div className="text-center pl-1">
-          <p className="text-lg text-gray-600 mb-8">
-            Visítanos en <span>Paraguay 55, Trelew</span>
+          <p className="text-lg text-gray-600 mb-8 flex items-center justify-center gap-2">
+            <img src={mapIcon} alt="Map icon" className="w-6 h-6" />
+            <span>Paraguay 55, Trelew</span>
           </p>
-          <p className="text-lg text-gray-600 mb-4">
-            Teléfono: <br /> <span id="phone-number">+ 54 2804 38 5269</span>{" "}
+          <p className="text-lg text-gray-600 mb-4 flex items-center justify-center gap-2">
+            <img src={phoneIcon} alt="Phone icon" className="w-6 h-6" />
+            <span id="phone-number"> 2804 38 5269</span>
           </p>
         </div>
       </section>
