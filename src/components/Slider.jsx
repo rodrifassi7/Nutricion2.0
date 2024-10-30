@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import Glide from "@glidejs/glide";
 import "@glidejs/glide/dist/css/glide.core.min.css";
 import { MenuCard } from "./MenuCard";
+import viandasEmpresariales from '../assets/images/viandasEmpresariales.webp';
+
 
 export const Slider = () => {
   const glideRef = useRef(null);
@@ -42,10 +44,7 @@ export const Slider = () => {
         <ul className="glide__slides">
           <li className="glide__slide">
             <MenuCard
-              imageUrl={
-                "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-              }
-              // cardDescription={"Viandas empresariales"}
+              imageUrl={viandasEmpresariales}
               cardName={"Viandas empresariales"}
             />
           </li>
