@@ -1,4 +1,4 @@
-import React from "react";
+
 import { foodForYou, freshFood, homemadeFood } from "../assets/icons";
 
 import { DifItem } from "../components/DifItem";

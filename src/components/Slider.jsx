@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import Glide from "@glidejs/glide";
 import "@glidejs/glide/dist/css/glide.core.min.css";
 import { MenuCard } from "./MenuCard";
-import viandasEmpresariales from 'git ../assets/images/viandasEmpresariales.webp';
+import viandasEmpresariales from '../assets/images/viandasEmpresariales.webp';
 
 
 export const Slider = () => {
