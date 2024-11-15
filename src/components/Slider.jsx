@@ -2,8 +2,13 @@ import { useEffect, useRef } from "react";
 import Glide from "@glidejs/glide";
 import "@glidejs/glide/dist/css/glide.core.min.css";
 import { MenuCard } from "./MenuCard";
-import viandasEmpresariales from '../assets/images/viandasEmpresariales.webp';
-
+import AptoDiabetico from "../assets/images/aptoDiabetico.webp";
+import Hiposodica from "../assets/images/Hiposodica.webp";
+import Charlas from "../assets/images/Charlas.webp";
+import Packs from "../assets/images/Packs.webp";
+import Saludable from "../assets/images/saludable.webp";
+import SinGluten from "../assets/images/sinGluten.webp";
+import Perimenopausia from "../assets/images/Perimenopausia.webp";
 
 export const Slider = () => {
   const glideRef = useRef(null);
@@ -43,82 +48,28 @@ export const Slider = () => {
       <div className="glide__track" data-glide-el="track">
         <ul className="glide__slides">
           <li className="glide__slide">
-            <MenuCard
-              imageUrl={viandasEmpresariales}
-              cardName={"Viandas empresariales"}
-            />
+            <MenuCard imageUrl={Charlas} cardName={"Charlas"} />
           </li>
           <li className="glide__slide">
-            <MenuCard
-              imageUrl={
-                "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-              }
-              // cardDescription={"salmon con patatas"}
-              cardName={"Packs semanales"}
-            />
+            <MenuCard imageUrl={AptoDiabetico} cardName={"Apto Diabetico"} />
           </li>
           <li className="glide__slide">
-            <MenuCard
-              imageUrl={
-                "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-              }
-              // cardDescription={"salmon con patatas"}
-              cardName={"Saludable"}
-            />
-          </li>
+            <MenuCard imageUrl={Hiposodica} cardName={"Hiposódica"} />
+          </li>{" "}
           <li className="glide__slide">
-            <MenuCard
-              imageUrl={
-                "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-              }
-              // cardDescription={"salmon con patatas"}
-              cardName={"Descenso"}
-            />
-          </li>
+            <MenuCard imageUrl={Packs} cardName={"Packs Semanales"} />
+          </li>{" "}
           <li className="glide__slide">
-            <MenuCard
-              imageUrl={
-                "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-              }
-              // cardDescription={"salmon con patatas"}
-              cardName={"Hiposódico"}
-            />
-          </li>
+            <MenuCard imageUrl={Saludable} cardName={"Saludable"} />
+          </li>{" "}
           <li className="glide__slide">
-            <MenuCard
-              imageUrl={
-                "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-              }
-              // cardDescription={"salmon con patatas"}
-              cardName={"Sin Gluten"}
-            />
-          </li>
+            <MenuCard imageUrl={SinGluten} cardName={"Sin Gluten"} />
+          </li>{" "}
           <li className="glide__slide">
-            <MenuCard
-              imageUrl={
-                "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-              }
-              // cardDescription={"salmon con patatas"}
-              cardName={"Apto diabético"}
-            />
-          </li>
+            <MenuCard imageUrl={Perimenopausia} cardName={"Mujeres +45"} />
+          </li>{" "}
           <li className="glide__slide">
-            <MenuCard
-              imageUrl={
-                "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-              }
-              // cardDescription={"salmon con patatas"}
-              cardName={"Meriendas saludables"}
-            />
-          </li>
-          <li className="glide__slide">
-            <MenuCard
-              imageUrl={
-                "https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-              }
-              // cardDescription={"salmon con patatas"}
-              cardName={"Capacitaciones y charlas"}
-            />
+            <MenuCard imageUrl={AptoDiabetico} cardName={"Apto Diabetico"} />
           </li>
         </ul>
       </div>
