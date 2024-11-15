@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { useMenuToggle } from "../hooks/useMenuToggle";
-import Logo from "../assets/images/NPLOGO.png";
+import Logo from "/images/NPLOGO.png";
 
 export const Navbar = () => {
   const { handleClick } = useMenuToggle();

@@ -1,8 +1,8 @@
-import MyImage from "../assets/images/HeroImg.webp";
+import MyImage from "/images/HeroImg.webp";
 import "animate.css";
 import WhatsApp from "../assets/logos/whatsapp";
 import { BotonReu } from "../components/BotonReu";
-import imageSrc from "../assets/images/corazon.png";
+import imageSrc from "/images/corazon.png";
 import { ImgText } from "../components/ImgText";
 
 export const HeroSection = () => {

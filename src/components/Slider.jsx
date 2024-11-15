@@ -2,13 +2,6 @@ import { useEffect, useRef } from "react";
 import Glide from "@glidejs/glide";
 import "@glidejs/glide/dist/css/glide.core.min.css";
 import { MenuCard } from "./MenuCard";
-import AptoDiabetico from "../assets/images/aptoDiabetico.webp";
-import Hiposodica from "../assets/images/Hiposodica.webp";
-import Charlas from "../assets/images/Charlas.webp";
-import Packs from "../assets/images/Packs.webp";
-import Saludable from "../assets/images/saludable.webp";
-import SinGluten from "../assets/images/sinGluten.webp";
-import Perimenopausia from "../assets/images/Perimenopausia.webp";
 
 export const Slider = () => {
   const glideRef = useRef(null);
@@ -48,28 +41,28 @@ export const Slider = () => {
       <div className="glide__track" data-glide-el="track">
         <ul className="glide__slides">
           <li className="glide__slide">
-            <MenuCard imageUrl={Charlas} cardName={"Charlas"} />
+            <MenuCard imageUrl="/images/Charlas.webp" cardName={"Charlas"} />
           </li>
           <li className="glide__slide">
-            <MenuCard imageUrl={AptoDiabetico} cardName={"Apto Diabetico"} />
+            <MenuCard imageUrl="/images/AptoDiabetico.webp" cardName={"Apto Diabetico"} />
           </li>
           <li className="glide__slide">
-            <MenuCard imageUrl={Hiposodica} cardName={"Hiposódica"} />
-          </li>{" "}
+            <MenuCard imageUrl="/images/Hiposodica.webp" cardName={"Hiposódica"} />
+          </li>
           <li className="glide__slide">
-            <MenuCard imageUrl={Packs} cardName={"Packs Semanales"} />
-          </li>{" "}
+            <MenuCard imageUrl="/images/Packs.webp" cardName={"Packs Semanales"} />
+          </li>
           <li className="glide__slide">
-            <MenuCard imageUrl={Saludable} cardName={"Saludable"} />
-          </li>{" "}
+            <MenuCard imageUrl="/images/Saludable.webp" cardName={"Saludable"} />
+          </li>
           <li className="glide__slide">
-            <MenuCard imageUrl={SinGluten} cardName={"Sin Gluten"} />
-          </li>{" "}
+            <MenuCard imageUrl="/images/SinGluten.webp" cardName={"Sin Gluten"} />
+          </li>
           <li className="glide__slide">
-            <MenuCard imageUrl={Perimenopausia} cardName={"Mujeres +45"} />
-          </li>{" "}
+            <MenuCard imageUrl="/images/Perimenopausia.webp" cardName={"Mujeres +45"} />
+          </li>
           <li className="glide__slide">
-            <MenuCard imageUrl={AptoDiabetico} cardName={"Apto Diabetico"} />
+            <MenuCard imageUrl="/images/AptoDiabetico.webp" cardName={"Apto Diabetico"} />
           </li>
         </ul>
       </div>

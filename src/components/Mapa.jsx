@@ -1,7 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import customMarkerIcon from "../assets/images/logo.png";
+import customMarkerIcon from "/images/logo.png";
 import mapIcon from "../assets/icons/map.png";
 import phoneIcon from "../assets/icons/phone.png";
 

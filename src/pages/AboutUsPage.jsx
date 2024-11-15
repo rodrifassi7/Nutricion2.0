@@ -1,4 +1,4 @@
-import MyImage from "../assets/images/Nutricionista.webp";
+import MyImage from "/images/Nutricionista.webp";
 import "animate.css";
 import { Footer } from "../components/Footer";
 import { Diferents } from "../sections/Diferents";
