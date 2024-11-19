@@ -50,6 +50,7 @@ export const HeroSection = () => {
       </section>
       <div className="fixed bottom-14 right-10 z-50 flex items-center justify-center hover:scale-105 duration-300">
         <a
+          id="whatsapp"
           href="https://wa.me/5492804385269?text=Hola!%20Me%20gustaría%20más%20información%20sobre%20las%20viandas"
           target="_blank"
           rel="noopener noreferrer"

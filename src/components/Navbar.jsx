@@ -21,9 +21,13 @@ export const Navbar = () => {
 
         <div className="flex-grow">
           <ul className="flex justify-center space-x-10 text-gray-900 dark:text-black text-md ">
-              <NavLink to="/" onClick={handleClick} className="hover:bg-oransh px-4 py-2 rounded-lg  hover:text-white duration-500   ">
-                Inicio
-              </NavLink>
+            <NavLink
+              to="/"
+              onClick={handleClick}
+              className="hover:bg-oransh px-4 py-2 rounded-lg  hover:text-white duration-500   "
+            >
+              Inicio
+            </NavLink>
             <li className="hover:bg-oransh px-4 py-2 rounded-lg hover:text-white duration-500">
               <NavLink to="/about" onClick={handleClick}>
                 Nosotros

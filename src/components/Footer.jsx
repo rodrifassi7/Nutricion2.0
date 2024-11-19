@@ -21,7 +21,11 @@ export const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={igpng} alt="Instagram" className="w-8 h-8 gap-2" />
+                    <img
+                      src={igpng}
+                      alt="Instagram"
+                      className="w-8 h-8 gap-2"
+                    />
                   </a>
                 </li>
                 <li className="self-center hover:scale-110">
@@ -30,16 +34,25 @@ export const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={facebook} alt="Facebook" className="w-8 h-8 gap-2" />
+                    <img
+                      src={facebook}
+                      alt="Facebook"
+                      className="w-8 h-8 gap-2"
+                    />
                   </a>
                 </li>
                 <li className="self-center hover:scale-110">
                   <a
-                    href="https://wa.me/542804385269"
+                    id="whatsapp"
+                    href="https://wa.me/5492804385269?text=Hola!%20Me%20gustaría%20más%20información%20sobre%20las%20viandas"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={whatsapp} alt="Whatsapp" className="w-8 h-8 gap-2" />
+                    <img
+                      src={whatsapp}
+                      alt="Whatsapp"
+                      className="w-8 h-8 gap-2"
+                    />
                   </a>
                 </li>
               </ul>
