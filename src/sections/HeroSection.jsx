@@ -26,7 +26,7 @@ export const HeroSection = () => {
       >
         <div className="flex flex-col w-full max-w-2xl gap-7 md:px-28 md:py-12 lg:py-16 xl:py-20">
           <h1 className="max-w-2xl text-5xl xl:text-8xl tracking-tight leading-none font-montserrat font-semibold text-grei text-center animate__animated animate__fadeInDown">
-            Nutrición Profesional
+            Nutrición Profesionalasd
           </h1>
 
           <div className="flex flex-col justify-center items-end md:self-end lg:justify-start lg:items-center md:text-end">
