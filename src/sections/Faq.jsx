@@ -3,23 +3,14 @@ export const Faq = () => {
     {
       question: "¿Qué tipo de comidas ofrecen?",
       answer:
-        "Ofrecemos una variedad de comidas saludables y equilibradas, elaboradas con ingredientes frescos y de temporada.",
+        "Ofrecemos una variedad de comidas saludables y equilibradas, elaboradas con ingredientes frescos, diseñada por nuestra nutricionista.",
     },
     {
       question: "¿Hacen entregas a domicilio?",
       answer:
-        "Sí, realizamos entregas a domicilio en ciertas áreas. Puedes verificar si tu ubicación está disponible en la sección de entrega de nuestro sitio.",
+        "Sí, realizamos entregas a domicilio. Contactate por Whatsapp o llamada para obtener más información.",
     },
-    {
-      question: "¿Puedo personalizar mi pedido?",
-      answer:
-        "¡Por supuesto! Puedes personalizar tu pedido según tus preferencias dietéticas y restricciones alimentarias.",
-    },
-    {
-      question: "¿Cuál es el tiempo de preparación para los pedidos?",
-      answer:
-        "Generalmente, el tiempo de preparación es de 30 a 45 minutos, dependiendo de la cantidad de pedidos que tengamos.",
-    },
+
     {
       question: "¿Tienen opciones vegetarianas o veganas?",
       answer:
@@ -28,7 +19,12 @@ export const Faq = () => {
     {
       question: "¿Cómo puedo contactar con el servicio al cliente?",
       answer:
-        "Puedes contactarnos a través de nuestro formulario de contacto en la página web o enviarnos un correo electrónico a soporte@nutricionprofesional.com.",
+        "Puedes contactarnos a través de Whatsapp o llamada",
+    },
+    {
+      question: "¿Donde se encuentran ubicados?",
+      answer:
+        "Nos encontramos en Paraguay 55, Trelew",
     },
   ];
 
