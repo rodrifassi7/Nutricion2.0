@@ -44,7 +44,7 @@ export const Slider = () => {
             <MenuCard imageUrl="/images/Charlas.webp" cardName={"Charlas"} />
           </li>
           <li className="glide__slide">
-            <MenuCard imageUrl="/images/AptoDiabetico.webp" cardName={"Apto Diabetico"} />
+            <MenuCard imageUrl="/images/AptoDiabetico.webp" cardName={"Apto Diabético"} />
           </li>
           <li className="glide__slide">
             <MenuCard imageUrl="/images/Hiposodica.webp" cardName={"Hiposódica"} />
@@ -61,9 +61,7 @@ export const Slider = () => {
           <li className="glide__slide">
             <MenuCard imageUrl="/images/Perimenopausia.webp" cardName={"Mujeres +45"} />
           </li>
-          <li className="glide__slide">
-            <MenuCard imageUrl="/images/AptoDiabetico.webp" cardName={"Apto Diabetico"} />
-          </li>
+         
         </ul>
       </div>
     </div>

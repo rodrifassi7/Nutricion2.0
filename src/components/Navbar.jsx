@@ -35,7 +35,7 @@ export const Navbar = () => {
             </li>
             <li className="hover:bg-oransh px-4 py-2 rounded-lg hover:text-white duration-500    ">
               <NavLink to="/menu" onClick={handleClick}>
-                Menu
+                Menú
               </NavLink>
             </li>
           </ul>
