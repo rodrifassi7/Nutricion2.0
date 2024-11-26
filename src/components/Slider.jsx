@@ -44,24 +44,41 @@ export const Slider = () => {
             <MenuCard imageUrl="/images/Charlas.webp" cardName={"Charlas"} />
           </li>
           <li className="glide__slide">
-            <MenuCard imageUrl="/images/AptoDiabetico.webp" cardName={"Apto Diabético"} />
+            <MenuCard
+              imageUrl="/images/AptoDiabetico.webp"
+              cardName={"Apto Diabético"}
+            />
           </li>
           <li className="glide__slide">
-            <MenuCard imageUrl="/images/Hiposodica.webp" cardName={"Hiposódica"} />
+            <MenuCard
+              imageUrl="/images/Hiposodica.webp"
+              cardName={"Hiposódica"}
+            />
           </li>
           <li className="glide__slide">
-            <MenuCard imageUrl="/images/Packs.webp" cardName={"Packs Semanales"} />
+            <MenuCard
+              imageUrl="/images/Packs.webp"
+              cardName={"Packs Semanales"}
+            />
           </li>
           <li className="glide__slide">
-            <MenuCard imageUrl="/images/Saludable.webp" cardName={"Saludable"} />
+            <MenuCard
+              imageUrl="/images/Saludable.webp"
+              cardName={"Saludable"}
+            />
           </li>
           <li className="glide__slide">
-            <MenuCard imageUrl="/images/SinGluten.webp" cardName={"Sin Gluten"} />
+            <MenuCard
+              imageUrl="/images/SinGluten.webp"
+              cardName={"Sin Gluten"}
+            />
           </li>
           <li className="glide__slide">
-            <MenuCard imageUrl="/images/Perimenopausia.webp" cardName={"Mujeres +45"} />
+            <MenuCard
+              imageUrl="/images/Perimenopausia.webp"
+              cardName={"Mujeres +45"}
+            />
           </li>
-         
         </ul>
       </div>
     </div>
